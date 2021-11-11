@@ -26,6 +26,7 @@
         <lombok.version>1.18.20</lombok.version>
         <mysql.version>8.0.18</mysql.version>
         <druid.verison>1.1.16</druid.verison>
+       <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <mybatis.spring.boot.verison>1.3.0</mybatis.spring.boot.verison>
     </properties>
 
@@ -91,6 +92,18 @@
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+            <!--swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
